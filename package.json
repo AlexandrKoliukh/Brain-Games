@@ -1,0 +1,22 @@
+{
+  "name": "kolalexo-hexlet",
+  "version": "1.0.0",
+  "description": "Hexlet-projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandrKoliukh/project-lvl1-s474.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandrKoliukh/project-lvl1-s474/issues"
+  },
+  "homepage": "https://github.com/AlexandrKoliukh/project-lvl1-s474#readme",
+  "bin" : {
+    "brain-even" : "./bin/brain-even.js"
+    }
+}
