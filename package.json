@@ -38,7 +38,7 @@
     "eslint-plugin-import": "^2.16.0"
   },
   "bin": {
-    "brain-games": "dist/bin/brain-even.js"
+    "brain-even": "dist/bin/brain-even.js"
   },
   "dependencies": {
     "readline-sync": "^1.4.9"
