@@ -3,7 +3,7 @@ install:
 
 
 run:
-	npm run babel-node -- src/bin/brain-even.js
+	npm run babel-node -- src/bin/brain-games.js
 
 
 publish:
