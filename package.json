@@ -1,8 +1,8 @@
 {
   "name": "kolalexo-hexlet",
   "version": "1.2.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Hexlet project Brain Games",
+  "keywords": ["hexlet-projects", "Brain Games", "kolalexo"],
   "files": [
     "dist"
   ],
