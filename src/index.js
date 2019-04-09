@@ -25,7 +25,7 @@ export const createQuestion = (questionCount) => {
 
     if (varAnswer1 || varAnswer2) console.log(correctAnswer);
     else {
-      const rightAnswer = userAnswer === 'yes' ? 'no' : 'yes';
+      const rightAnswer = questionValue % 2 === 0 ? 'yes' : 'no';
       console.log(checkCorrectAnswer(userAnswer, rightAnswer));
       return;
     }
