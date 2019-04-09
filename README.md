@@ -2,4 +2,4 @@
 
 [![Build Status](https://travis-ci.org/AlexandrKoliukh/project-lvl1-s474.svg?branch=master)](https://travis-ci.org/AlexandrKoliukh/project-lvl1-s474)
 
-<a href="https://asciinema.org/a/gUc8MWpbAZEwduIYzJpJcPzZe" target="_blank"><img src="https://asciinema.org/a/gUc8MWpbAZEwduIYzJpJcPzZe.svg" /></a></video>
+<script id="asciicast-gUc8MWpbAZEwduIYzJpJcPzZe" src="https://asciinema.org/a/gUc8MWpbAZEwduIYzJpJcPzZe.js" async></script>
