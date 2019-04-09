@@ -2,8 +2,8 @@ install:
 	npm install
 
 
-run:
-	npm run babel-node -- src/bin/brain-games.js
+start:
+	npx babel-node src/bin/brain-games.js
 
 
 publish:
