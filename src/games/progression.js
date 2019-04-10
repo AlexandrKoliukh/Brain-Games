@@ -6,9 +6,9 @@ const progressionLength = 10;
 const gameDescription = 'What number is missing in the progression?';
 
 const getProgression = () => {
-  const progressionArray = new Array(progressionLength);
   const startProgressionValue = getRndNumber();
   const progressionWeight = getRndNumber();
+  const progressionArray = new Array(progressionLength);
   for (let i = 0; i < progressionLength; i += 1) {
     if (i === 0) progressionArray[i] = startProgressionValue;
     else progressionArray[i] = progressionArray[i - 1] + progressionWeight;
