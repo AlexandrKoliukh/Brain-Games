@@ -6,8 +6,8 @@ const progressionLength = 10;
 const gameDescription = 'What number is missing in the progression?';
 
 const getProgression = () => {
-  const startProgressionValue = getRndNumber();
-  const progressionWeight = getRndNumber();
+  const startProgressionValue = getRndNumber(10);
+  const progressionWeight = getRndNumber(50);
   const progressionArray = new Array(progressionLength);
   for (let i = 0; i < progressionLength; i += 1) {
     if (i === 0) progressionArray[i] = startProgressionValue;
@@ -23,7 +23,7 @@ const hideElement = (progression, element) => progression.map((i) => {
 
 const getGameProgressionData = () => {
   const progression = getProgression();
-  const indexOfHiddenElement = getRndNumber(progressionLength);
+  const indexOfHiddenElement = getRndNumber(progressionLength - 1);
   const progressionWithHiddenElement = hideElement(progression, indexOfHiddenElement);
   const question = progressionWithHiddenElement.reduce((i, acc) => `${i} ${acc}`, '');
   const rightAnswer = progression[indexOfHiddenElement];
