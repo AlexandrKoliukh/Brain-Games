@@ -1,32 +1,29 @@
-import {
-  getUserAnswer,
-  outQuestion,
-  outWin,
-  outLose,
-  outCorrect,
-  getRndNumber,
-} from '..';
+import makeGame from '..';
+import getRndNumber from '../utils';
+import { cons } from 'hexlet-pairs';
 
-const gcd = (a, b) => {
+const gameRules = 'Find the greatest common divisor of given numbers.';
+
+const getGcd = (a, b) => {
   if (b === 0) return a;
 
-  return gcd(b, a % b);
+  return getGcd(b, a % b);
 };
 
-export default (questionCount = 3) => {
-  console.log('Find the greatest common divisor of given numbers.\n');
-  for (let i = 0; i < questionCount; i += 1) {
-    const questionValue1 = getRndNumber();
-    const questionValue2 = getRndNumber();
-    const question = `${questionValue1} ${questionValue2}`;
-    const rightAnswer = gcd(questionValue1, questionValue2);
-    outQuestion(question);
-    const userAnswer = getUserAnswer();
-    if (+userAnswer === rightAnswer) outCorrect();
-    else {
-      outLose(userAnswer, rightAnswer);
-      return;
-    }
-  }
-  outWin();
+const getQuestionValue = () => getRndNumber();
+
+const isCorrectAnswer = (userAnswer, rightAnswer) => +userAnswer === rightAnswer;
+
+const getRightAnswer = (arg1, arg2) => getGcd(arg1, arg2);
+
+const getGameGcdData = () => {
+  const questionValue1 = getQuestionValue();
+  const questionValue2 = getQuestionValue();
+  const question = `${questionValue1} ${questionValue2}`;
+  const rightAnswer = getRightAnswer(questionValue1, questionValue2);
+  return cons(question, rightAnswer);
+};
+
+export default () => {
+  makeGame(gameRules, isCorrectAnswer, getGameGcdData);
 };

@@ -1,4 +1,5 @@
-import { getRndNumber, makeGame } from '..';
+import makeGame from '..';
+import getRndNumber from '../utils';
 import { cons } from 'hexlet-pairs';
 
 const mathOperators = ['+', '-', '*'];
