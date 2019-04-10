@@ -9,8 +9,7 @@ const getRightAnswer = (arg1, arg2, operator) => {
   switch (operator) {
     case '+': return arg1 + arg2;
     case '-': return arg1 - arg2;
-    case '*': return arg1 * arg2;
-    default: return null;
+    default: return arg1 * arg2;
   }
 };
 
