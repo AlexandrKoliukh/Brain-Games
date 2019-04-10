@@ -1,3 +1,3 @@
-import { calc } from '..';
+import calc from '../games/calc';
 
 calc();

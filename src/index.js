@@ -1,39 +1,19 @@
 import readlineSync from 'readline-sync';
 
-export const even = () => {
-  console.log('Welcome to the Brain Games!');
-  console.log('Answer "yes" if number even otherwise answer "no".\n');
+console.log('Welcome to the Brain Games!');
 
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
+const userName = readlineSync.question('May I have your name? ');
+console.log(`Hello, ${userName}!`);
 
-  const isEven = arg => arg % 2 === 0;
+export const getUserName = () => userName;
 
-  const createQuestion = (questionCount) => {
-    const correctAnswer = 'Correct!';
-    const checkCorrectAnswer = (userAnswer, rightAnswer) => `'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'. Let's try again, ${userName}!`;
+export const getUserAnswer = () => readlineSync.question('Your answer: ');
 
-    for (let i = 0; i < questionCount; i += 1) {
-      const question = Math.floor(Math.random() * 100);
-      console.log(`Question: ${question}`);
+export const outQuestion = question => console.log(`Question: ${question}`);
 
-      const userAnswer = readlineSync.question('Your answer: ');
-      const varAnswer1 = isEven(question) && userAnswer === 'yes';
-      const varAnswer2 = !isEven(question) && userAnswer === 'no';
+export const outWin = () => console.log(`Congratulations, ${userName}!`);
+export const outLose = (userAnswer, rightAnswer) => console.log(`${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'. Let's try again, ${userName}!`);
 
-      if (varAnswer1 || varAnswer2) console.log(correctAnswer);
-      else {
-        const rightAnswer = isEven(question) ? 'yes' : 'no';
-        console.log(checkCorrectAnswer(userAnswer, rightAnswer));
-        return;
-      }
-    }
-    console.log(`Congratulations, ${userName}!`);
-  };
+export const outCorrect = () => console.log('Correct!');
 
-  createQuestion(3);
-};
-
-export const calc = () => {
-
-};
+export const getRndNumber = (max = 100, min = 1) => Math.floor(Math.random() * (max - min) + min);
