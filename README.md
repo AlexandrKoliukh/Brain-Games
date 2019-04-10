@@ -2,4 +2,11 @@
 
 [![Build Status](https://travis-ci.org/AlexandrKoliukh/project-lvl1-s474.svg?branch=master)](https://travis-ci.org/AlexandrKoliukh/project-lvl1-s474)
 
+
+brain-even
 <a href="https://asciinema.org/a/gUc8MWpbAZEwduIYzJpJcPzZe" target="_blank"><img src="https://asciinema.org/a/gUc8MWpbAZEwduIYzJpJcPzZe.svg" /></a>
+
+brain-calc
+<a href="https://asciinema.org/a/7tFKi03XImMH7cV3fsjq0Py4j" target="_blank"><img src="https://asciinema.org/a/7tFKi03XImMH7cV3fsjq0Py4j.svg" /></a>
+
+brain-gcd
