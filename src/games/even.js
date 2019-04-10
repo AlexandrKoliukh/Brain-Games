@@ -10,6 +10,7 @@ import {
 const isEven = arg => arg % 2 === 0;
 
 export default (questionCount = 3) => {
+  console.log('Answer "yes" if number even otherwise answer "no".\n');
   for (let i = 0; i < questionCount; i += 1) {
     const question = getRndNumber();
     outQuestion(question);

@@ -10,6 +10,7 @@ import {
 const mathOperators = ['+', '-', '*'];
 
 export default (questionCount = 3) => {
+  console.log('What is the result of the expression?\n');
   for (let i = 0; i < questionCount; i += 1) {
     const questionValue1 = getRndNumber(50);
     const questionValue2 = getRndNumber(50);
