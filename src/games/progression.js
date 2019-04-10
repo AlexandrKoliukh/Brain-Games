@@ -2,24 +2,25 @@ import makeGame from '..';
 import getRndNumber from '../utils';
 import { cons } from 'hexlet-pairs';
 
-const progressionLength = 10;
 const gameDescription = 'What number is missing in the progression?';
+const progressionLength = 10;
 
 const getProgression = () => {
-  const startProgressionValue = getRndNumber(10);
-  const progressionWeight = getRndNumber(50);
-  const progressionArray = new Array(progressionLength);
-  for (let i = 0; i < progressionLength; i += 1) {
-    if (i === 0) progressionArray[i] = startProgressionValue;
-    else progressionArray[i] = progressionArray[i - 1] + progressionWeight;
-  }
-  return progressionArray;
+  const startValue = getRndNumber(10);
+  const step = getRndNumber(50);
+  const iter = (acc, currentValue) => {
+    if (acc.length === progressionLength) return acc;
+    const newAcc = [...acc, currentValue];
+    return iter(newAcc, currentValue + step);
+  };
+  return iter([], startValue);
 };
 
-const hideElement = (progression, element) => progression.map((i) => {
-  if (progression.indexOf(i) === element) return '..';
-  return i;
-});
+const hideElement = (progression, indexOfElement) => {
+  const newProgression = [...progression];
+  newProgression[indexOfElement] = '..';
+  return newProgression;
+};
 
 const getGameProgressionData = () => {
   const progression = getProgression();
