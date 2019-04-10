@@ -1,32 +1,37 @@
-import {
-  getUserAnswer,
-  outQuestion,
-  outWin,
-  outLose,
-  outCorrect,
-  getRndNumber,
-} from '..';
+import { getRndNumber, makeGame } from '..';
+import { cons } from 'hexlet-pairs';
 
 const mathOperators = ['+', '-', '*'];
+const gameRules = 'What is the result of the expression?';
 
-export default (questionCount = 3) => {
-  console.log('What is the result of the expression?\n');
-  for (let i = 0; i < questionCount; i += 1) {
-    const questionValue1 = getRndNumber(50);
-    const questionValue2 = getRndNumber(50);
-    const questionMathOperator = mathOperators[getRndNumber(mathOperators.length, 0)];
-    const question = `${questionValue1} ${questionMathOperator} ${questionValue2}`;
-    outQuestion(question);
-    const userAnswer = getUserAnswer();
-    /* eslint-disable */
-    // Я хорошо подумал, и вроде бы ничего не мешает использовать eval????
-    const rightAnswer = eval(question);
-    /* eslint-enable */
-    if (+userAnswer === rightAnswer) outCorrect();
-    else {
-      outLose(userAnswer, rightAnswer);
-      return;
-    }
+const getRightAnswer = (arg1, arg2, operator) => {
+  switch (operator) {
+    case '+': return arg1 + arg2;
+    case '-': return arg1 - arg2;
+    case '*': return arg1 * arg2;
+    default: return `wrong operator ${operator}`;
   }
-  outWin();
+};
+
+const isCorrectAnswer = (userAnswer, rightAnswer) => +userAnswer === rightAnswer;
+
+const getQuestionValue = () => getRndNumber(50);
+/* Максимальное число при mathOperators.length = 3 в
+   функции Math.random будет 2.999, округляется до меньшего floor, и следовательно
+   полученное число будет в итервале [0, 2]
+   https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random#Example:_Using_Math.random */
+const getQuestionMathOperator = () => mathOperators[getRndNumber(mathOperators.length, 0)];
+const getQuestion = (arg1, arg2, operator) => `${arg1} ${operator} ${arg2}`;
+
+const getGameCalcData = () => {
+  const questionValue1 = getQuestionValue();
+  const questionValue2 = getQuestionValue();
+  const questionMathOperator = getQuestionMathOperator();
+  const question = getQuestion(questionValue1, questionValue2, questionMathOperator);
+  const rightAnswer = getRightAnswer(questionValue1, questionValue2, questionMathOperator);
+  return cons(question, rightAnswer);
+};
+
+export default () => {
+  makeGame(gameRules, isCorrectAnswer, getGameCalcData);
 };

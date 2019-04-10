@@ -3,7 +3,7 @@ install:
 
 
 start:
-	npx babel-node src/bin/brain-gcd.js
+	npx babel-node src/bin/brain-calc.js
 
 publish:
 	npm publish
