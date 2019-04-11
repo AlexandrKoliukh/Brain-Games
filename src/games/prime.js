@@ -21,7 +21,7 @@ const isPrime = (number) => {
 const getGamePrimeData = () => {
   const question = getRndNumber();
   const rightAnswer = isPrime(question) ? 'yes' : 'no';
-  return cons(question, `${rightAnswer}`);
+  return cons(question, rightAnswer);
 };
 
 export default () => {
