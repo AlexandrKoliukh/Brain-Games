@@ -5,29 +5,24 @@ import { cons } from 'hexlet-pairs';
 const gameDescription = 'What number is missing in the progression?';
 const progressionLength = 10;
 
-const getProgression = () => {
-  const startValue = getRndNumber(0, 10);
-  const step = getRndNumber(0, 50);
-  const iter = (acc, currentValue) => {
-    if (acc.length === progressionLength) return acc;
-    const newAcc = [...acc, currentValue];
-    return iter(newAcc, currentValue + step);
-  };
-  return iter([], startValue);
-};
-
-const hideElement = (progression, indexOfElement) => {
-  const newProgression = [...progression];
-  newProgression[indexOfElement] = '..';
-  return newProgression;
+const getProgressionWithHiddenElement = (startValue, step, indexOfHiddenElement) => {
+  const progression = new Array(progressionLength);
+  for (let i = 0; i < progressionLength; i += 1) {
+    if (i !== indexOfHiddenElement) {
+      progression[i] = startValue + step * i;
+    } else {
+      progression[i] = '..';
+    }
+  }
+  return progression;
 };
 
 const getGameProgressionData = () => {
-  const progression = getProgression();
-  const indexOfHiddenElement = getRndNumber(progressionLength - 1);
-  const progressionWithHiddenElement = hideElement(progression, indexOfHiddenElement);
-  const question = progressionWithHiddenElement.reduce((i, acc) => `${i} ${acc}`, '');
-  const rightAnswer = progression[indexOfHiddenElement];
+  const startValue = getRndNumber(0, 10);
+  const step = getRndNumber(0, 50);
+  const indexOfHiddenElement = getRndNumber(0, progressionLength - 1);
+  const question = getProgressionWithHiddenElement(startValue, step, indexOfHiddenElement).join(' ');
+  const rightAnswer = startValue + step * indexOfHiddenElement;
   return cons(question, rightAnswer);
 };
 
