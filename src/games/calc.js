@@ -19,7 +19,7 @@ const getGameCalcData = () => {
   const questionMathOperator = mathOperators[getRndNumber(mathOperators.length - 1)];
   const question = `${questionValue1} ${questionMathOperator} ${questionValue2}`;
   const rightAnswer = getRightAnswer(questionValue1, questionValue2, questionMathOperator);
-  return cons(question, rightAnswer);
+  return cons(question, `${rightAnswer}`);
 };
 
 export default () => {
