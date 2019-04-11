@@ -14,8 +14,8 @@ const getRightAnswer = (arg1, arg2, operator) => {
 };
 
 const getGameCalcData = () => {
-  const questionValue1 = getRndNumber(50);
-  const questionValue2 = getRndNumber(50);
+  const questionValue1 = getRndNumber(0, 50);
+  const questionValue2 = getRndNumber(0, 50);
   const questionMathOperator = mathOperators[getRndNumber(mathOperators.length - 1)];
   const question = `${questionValue1} ${questionMathOperator} ${questionValue2}`;
   const rightAnswer = getRightAnswer(questionValue1, questionValue2, questionMathOperator);

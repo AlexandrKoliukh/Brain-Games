@@ -6,8 +6,8 @@ const gameDescription = 'What number is missing in the progression?';
 const progressionLength = 10;
 
 const getProgression = () => {
-  const startValue = getRndNumber(10);
-  const step = getRndNumber(50);
+  const startValue = getRndNumber(0, 10);
+  const step = getRndNumber(0, 50);
   const iter = (acc, currentValue) => {
     if (acc.length === progressionLength) return acc;
     const newAcc = [...acc, currentValue];
