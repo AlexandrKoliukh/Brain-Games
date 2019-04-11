@@ -15,7 +15,7 @@ const getGameGcdData = () => {
   const questionValue2 = getRndNumber();
   const question = `${questionValue1} ${questionValue2}`;
   const rightAnswer = getGcd(questionValue1, questionValue2);
-  return cons(question, rightAnswer);
+  return cons(question, `${rightAnswer}`);
 };
 
 export default () => {
