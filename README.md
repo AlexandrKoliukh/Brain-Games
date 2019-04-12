@@ -3,7 +3,7 @@
 
 BrainGames install:
 
-$ npm install -g kolalexo-hexlet-1 
+    $ npm install -g kolalexo-hexlet-1 
 
 
 Games list:
@@ -18,4 +18,4 @@ Games list:
 
 Example:
 
-[![asciicast](https://asciinema.org/a/PcBqM9TiyaKSeTs78ZJLt72qI.svg)](https://asciinema.org/a/PcBqM9TiyaKSeTs78ZJLt72qI)
+<script id="asciicast-PcBqM9TiyaKSeTs78ZJLt72qI" src="https://asciinema.org/a/PcBqM9TiyaKSeTs78ZJLt72qI.js" async></script>
