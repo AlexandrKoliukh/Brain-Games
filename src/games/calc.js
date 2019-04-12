@@ -16,10 +16,11 @@ const getRightAnswer = (arg1, arg2, operator) => {
 const getGameCalcData = () => {
   const questionValue1 = getRndNumber(0, 50);
   const questionValue2 = getRndNumber(0, 50);
-  const questionMathOperator = mathOperators[getRndNumber(mathOperators.length - 1)];
+  const questionMathOperator = mathOperators[getRndNumber(0, mathOperators.length - 1)];
   const question = `${questionValue1} ${questionMathOperator} ${questionValue2}`;
   const rightAnswer = getRightAnswer(questionValue1, questionValue2, questionMathOperator);
-  return cons(question, `${rightAnswer}`);
+  const stringRightAnswer = rightAnswer.toString();
+  return cons(question, stringRightAnswer);
 };
 
 export default () => {
