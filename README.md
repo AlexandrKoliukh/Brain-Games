@@ -1,24 +1,22 @@
 <a href="https://codeclimate.com/github/AlexandrKoliukh/project-lvl1-s474/maintainability"><img src="https://api.codeclimate.com/v1/badges/b08eea1ba0e2ab6861ff/maintainability" /></a>
-
 [![Build Status](https://travis-ci.org/AlexandrKoliukh/project-lvl1-s474.svg?branch=master)](https://travis-ci.org/AlexandrKoliukh/project-lvl1-s474)
 
+BrainGames is console mini-games.
 
-brain-even
+BrainGames install:
 
-<a href="https://asciinema.org/a/gUc8MWpbAZEwduIYzJpJcPzZe" target="_blank"><img src="https://asciinema.org/a/gUc8MWpbAZEwduIYzJpJcPzZe.svg" /></a>
+$ npm install kolalexo-hexlet-1 
 
-brain-calc
 
-<a href="https://asciinema.org/a/7tFKi03XImMH7cV3fsjq0Py4j" target="_blank"><img src="https://asciinema.org/a/7tFKi03XImMH7cV3fsjq0Py4j.svg" /></a>
+Games list:
 
-brain-gcd
+<ul>
+    <li>brain-even</li>
+    <li>brain-calc</li>
+    <li>brain-gcd</li>
+    <li>brain-progression</li>
+    <li>brain-prime</li>
+</ul>
 
-<a href="https://asciinema.org/a/wMZ9nUihUyxbcmQ5EwCWHbCe6" target="_blank"><img src="https://asciinema.org/a/wMZ9nUihUyxbcmQ5EwCWHbCe6.svg" /></a>
-
-brain-progression
-
-<a href="https://asciinema.org/a/P4jQKxE2T9qyD673cXXDC1arJ" target="_blank"><img src="https://asciinema.org/a/P4jQKxE2T9qyD673cXXDC1arJ.svg" /></a>
-
-brain-prime
-
-<a href="https://asciinema.org/a/wgjhfuVEFPAJLoytmO0wnKupR" target="_blank"><img src="https://asciinema.org/a/wgjhfuVEFPAJLoytmO0wnKupR.svg" /></a>
+Example:
+[![asciicast](https://asciinema.org/a/PcBqM9TiyaKSeTs78ZJLt72qI.svg)](https://asciinema.org/a/PcBqM9TiyaKSeTs78ZJLt72qI)
