@@ -20,4 +20,4 @@ Games list:
 
 Example:
 
-[![brain-games.gif](https://s2.gifyu.com/images/brain-games.gif)](https://gifyu.com/image/3OLg)
+[![asciicast](https://asciinema.org/a/PcBqM9TiyaKSeTs78ZJLt72qI.svg)](https://asciinema.org/a/PcBqM9TiyaKSeTs78ZJLt72qI)
