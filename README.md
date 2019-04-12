@@ -5,7 +5,7 @@ BrainGames is console mini-games.
 
 BrainGames install:
 
-$ npm install kolalexo-hexlet-1 
+$ npm install -g kolalexo-hexlet-1 
 
 
 Games list:
