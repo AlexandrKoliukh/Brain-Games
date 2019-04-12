@@ -16,6 +16,7 @@ Games list:
     <li>brain-prime</li>
 </ul>
 
-<p>Example:</p>
-<script src="https://asciinema.org/a/PcBqM9TiyaKSeTs78ZJLt72qI.js" id="asciicast-PcBqM9TiyaKSeTs78ZJLt72qI" async></script>
-<p></p>
+Example:
+
+[![asciicast](https://asciinema.org/a/PcBqM9TiyaKSeTs78ZJLt72qI.svg)](https://asciinema.org/a/PcBqM9TiyaKSeTs78ZJLt72qI)
+
