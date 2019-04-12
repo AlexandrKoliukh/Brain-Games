@@ -18,6 +18,4 @@ Games list:
 
 Example:
 
-<pre><code>
 <script id="asciicast-PcBqM9TiyaKSeTs78ZJLt72qI" src="https://asciinema.org/a/PcBqM9TiyaKSeTs78ZJLt72qI.js" async></script>
-</code></pre>
