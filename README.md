@@ -20,4 +20,4 @@ Games list:
 
 Example:
 
-[![asciicast](https://asciinema.org/a/PcBqM9TiyaKSeTs78ZJLt72qI.svg)](https://asciinema.org/a/PcBqM9TiyaKSeTs78ZJLt72qI)
+<img src="https://i.ibb.co/Mhbzscp/brain-games.gif" alt="brain-games-example" border="0">
