@@ -12,7 +12,6 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel-node": "babel-node",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
@@ -20,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/AlexandrKoliukh/project-lvl1-s474.git"
   },
-  "author": "",
+  "author": "Alexangr Koliukh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlexandrKoliukh/project-lvl1-s474/issues"
@@ -35,7 +34,6 @@
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-babel": "^5.3.0",
