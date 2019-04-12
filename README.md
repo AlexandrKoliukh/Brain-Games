@@ -20,4 +20,4 @@ Games list:
 
 Example:
 
-<img src="https://i.ibb.co/Mhbzscp/brain-games.gif" alt="brain-games-example" border="0">
+[![brain-games.gif](https://s2.gifyu.com/images/brain-games.gif)](https://gifyu.com/image/3OLg)
