@@ -1,6 +1,6 @@
 {
   "name": "kolalexo-hexlet-1",
-  "version": "2.4.6",
+  "version": "2.4.7",
   "description": "Hexlet project Brain Games",
   "keywords": [
     "hexlet-projects",
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/AlexandrKoliukh/project-lvl1-s474.git"
   },
-  "author": "Alexangr Koliukh",
+  "author": "Alexandr Koliukh",
   "bugs": {
     "url": "https://github.com/AlexandrKoliukh/project-lvl1-s474/issues"
   },
@@ -39,7 +39,6 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.3",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.16.0"
   },
   "dependencies": {

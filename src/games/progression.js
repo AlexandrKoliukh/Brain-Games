@@ -22,8 +22,8 @@ const getGameProgressionData = () => {
   const step = getRndNumber(0, 50);
   const indexOfHiddenElement = getRndNumber(0, progressionLength - 1);
   const question = getProgressionWithHiddenElement(startValue, step, indexOfHiddenElement).join(' ');
-  const rightAnswer = startValue + step * indexOfHiddenElement;
-  return cons(question, `${rightAnswer}`);
+  const rightAnswer = (startValue + step * indexOfHiddenElement).toString();
+  return cons(question, rightAnswer);
 };
 
 export default () => {
