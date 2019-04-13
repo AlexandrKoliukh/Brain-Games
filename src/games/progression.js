@@ -1,5 +1,5 @@
 import makeGame from '..';
-import getRndNumber from '../utils';
+import getNumber from '../utils';
 import { cons } from 'hexlet-pairs';
 
 const gameDescription = 'What number is missing in the progression?';
@@ -18,9 +18,9 @@ const getProgressionWithHiddenElement = (startValue, step, indexOfHiddenElement)
 };
 
 const getGameProgressionData = () => {
-  const startValue = getRndNumber(0, 10);
-  const step = getRndNumber(0, 50);
-  const indexOfHiddenElement = getRndNumber(0, progressionLength - 1);
+  const startValue = getNumber(0, 10);
+  const step = getNumber(0, 50);
+  const indexOfHiddenElement = getNumber(0, progressionLength - 1);
   const question = getProgressionWithHiddenElement(startValue, step, indexOfHiddenElement).join(' ');
   const rightAnswer = (startValue + step * indexOfHiddenElement).toString();
   return cons(question, rightAnswer);

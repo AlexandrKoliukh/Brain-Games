@@ -1,5 +1,5 @@
 import makeGame from '..';
-import getRndNumber from '../utils';
+import getNumber from '../utils';
 import { cons } from 'hexlet-pairs';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -19,7 +19,7 @@ const isPrime = (number) => {
 };
 
 const getGamePrimeData = () => {
-  const question = getRndNumber();
+  const question = getNumber();
   const rightAnswer = isPrime(question) ? 'yes' : 'no';
   return cons(question, rightAnswer);
 };
